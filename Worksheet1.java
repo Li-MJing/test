@@ -52,18 +52,7 @@ public class Worksheet1 {
         return index;
     }
 
-    // Exercise 4
-
-    static boolean allEven(List<Integer> a) {
-        if(a.isEmpty())
-            throw new IllegalArgumentException("This list is empty!");
-        if(a.getTail().isEmpty())
-            return a.getHead()%2==0;
-        if(a.getHead()%2==0)
-            return allEven(a.getTail());
-        else
-            return false;
-    }
+   
 
     // Exercise 5
 
